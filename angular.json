@@ -122,5 +122,5 @@
       }
     }
   },
-  "defaultProject": "dist/corona" 
+  "defaultProject": "dist/" 
 }
