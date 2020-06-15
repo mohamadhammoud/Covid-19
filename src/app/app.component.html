@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container">
+
+      <span class="navbar-brand">Designed By Issa and Developed By Hammoud</span>
+      <button class="navbar-toggler" data-target="#navbarollapse" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+</nav>
+
+
+<section id="whatEver">
+  <div class="container text-center">
+      <div class="card text-light bg-info">
+          <div class="card-body text-center">
+              <select [(ngModel)]="selectedCountry" (change)="setSelectedCountry(selectedCountry)" name="select" id="select" class="form-control mb-3">
+                <option>All Countries</option>
+                <option *ngFor="let country of countries">{{country.name}}</option>
+              </select>
+              <ul class="list-group text-dark">
+                <li class="list-group-item" *ngFor="let number of selectedCountryArray" >{{number}}</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>

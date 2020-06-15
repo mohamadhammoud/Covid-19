@@ -1,0 +1,24 @@
+body {
+  background: #333;
+  color: #fff; }
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8; }
+
+#whatEver {
+  padding-top: 150px; }
+  #whatEver .container {
+    padding: 50px;
+    max-width: 400px; }
+  #whatEver .card:hover {
+    transform: rotate(-10deg) scale(1.1);
+    transition: all 0.7s; }
+
+@media (max-width: 335px) {
+  #whatEver {
+    font-size: 13px; }
+    #whatEver select {
+      font-size: 13px; }
+    #whatEver li {
+      padding: 8px; } }
